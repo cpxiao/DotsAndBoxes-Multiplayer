@@ -1,0 +1,11 @@
+<resources>
+
+    <string-array name="player_array">
+        <item>@string/player1</item>
+        <item>@string/player2</item>
+        <item>@string/player3</item>
+        <item>@string/player4</item>
+        <item>@string/player5</item>
+    </string-array>
+
+</resources>
