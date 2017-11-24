@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+//apply plugin: 'com.jakewharton.hugo'
 //apply plugin: 'com.antfortune.freeline'
 
 android {
@@ -6,10 +7,10 @@ android {
     buildToolsVersion "25.0.2"
     defaultConfig {
         applicationId "com.cpxiao.dotsandboxes"
-        minSdkVersion 9//使用freeline测试的时候最低14，之后改回对应版本9
+        minSdkVersion 14//使用freeline测试的时候最低14，之后改回对应版本9
         targetSdkVersion 25
-        versionCode 1
-        versionName "1.0"
+        versionCode 101
+        versionName "1.0.1"
     }
 
     buildTypes {
@@ -63,18 +64,25 @@ android {
 }
 
 dependencies {
-    compile project(':AndroidUtils:library')
+    compile project(':__AndroidUtils:library')
 
     compile 'com.android.support:appcompat-v7:25.3.1'
     /**
      * Ads Start
      */
     //友盟统计
-    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile 'com.umeng.analytics:analytics:6.1.2'
+//    compile 'com.umeng.analytics:analytics:latest.integration'
     //Facebook广告
-    compile files('libs/AudienceNetwork_v4.7.jar')
+//    compile files('libs/AudienceNetwork_v4.7.jar')
+//    compile 'com.facebook.android:audience-network-sdk:4.+'
+    compile 'com.facebook.android:audience-network-sdk:4.25.0'
     //AdMob广告
-    compile 'com.google.firebase:firebase-ads:9.4.0'
+//    compile 'com.google.firebase:firebase-ads:9.4.0'
+    compile 'com.google.firebase:firebase-ads:11.0.0'
+    //ZAds SDK
+//    compile 'com.github.bumptech.glide:glide:3.7.0'//要放在前面几个库的后面
+    compile 'com.github.bumptech.glide:glide:4.0.0-RC1'
     /**
      * Ads End
      */

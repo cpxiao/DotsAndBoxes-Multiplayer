@@ -4,20 +4,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/activity_home_bg"
-    android:orientation="vertical">
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="100dp">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="30dp"
+        android:text="@string/app_name"
+        android:textColor="#8bc34a"
+        android:textSize="26sp"/>
 
     <LinearLayout
+        style="@style/HomeLayout"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:gravity="center"
-        android:orientation="vertical">
-
-        <TextView
-            style="@style/HomeTitle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/app_name"/>
+        android:layout_height="wrap_content">
 
         <Button
             android:id="@+id/vs_computer"
@@ -26,12 +30,26 @@
             android:layout_height="wrap_content"
             android:text="@string/vs_computer"/>
 
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/HomeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
         <Button
             android:id="@+id/two_players"
             style="@style/HomeBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/two_players"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/HomeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
         <Button
             android:id="@+id/three_players"
@@ -40,6 +58,13 @@
             android:layout_height="wrap_content"
             android:text="@string/three_players"/>
 
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/HomeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
         <Button
             android:id="@+id/four_players"
             style="@style/HomeBtn"
@@ -47,27 +72,50 @@
             android:layout_height="wrap_content"
             android:text="@string/four_players"/>
 
-        <Button
-            android:id="@+id/how_to_play"
-            style="@style/HomeBtn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/how_to_play"/>
-
-        <Button
-            android:id="@+id/settings"
-            style="@style/HomeBtn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/settings"/>
-
-        <Button
-            android:id="@+id/quit"
-            style="@style/HomeBtn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/quit"/>
     </LinearLayout>
 
-    <include layout="@layout/layout_ads_50"/>
+    <LinearLayout
+        style="@style/HomeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/rate_app"
+            style="@style/HomeBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/rate_app"
+            android:src="@drawable/ic_rate"/>
+
+        <ImageButton
+            android:id="@+id/share"
+            style="@style/HomeBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/share"
+            android:src="@drawable/ic_share"/>
+
+        <ImageButton
+            android:id="@+id/how_to_play"
+            style="@style/HomeBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/how_to_play"
+            android:src="@drawable/ic_how_to_play"/>
+
+        <ImageButton
+            android:id="@+id/settings"
+            style="@style/HomeBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/settings"
+            android:src="@drawable/ic_settings"/>
+
+
+    </LinearLayout>
+
 </LinearLayout>

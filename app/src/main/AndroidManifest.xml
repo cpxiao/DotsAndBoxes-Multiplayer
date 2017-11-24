@@ -24,23 +24,13 @@
         android:theme="@style/AppTheme">
 
         <activity
-            android:name=".dotsandboxes.activity.HomeActivity"
+            android:name=".dotsandboxes.activity.MainActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
-        </activity>
-
-        <activity
-            android:name=".dotsandboxes.activity.GameActivity"
-            android:screenOrientation="portrait">
-        </activity>
-
-        <activity
-            android:name=".dotsandboxes.activity.SettingsActivity"
-            android:screenOrientation="portrait">
         </activity>
 
         <meta-data

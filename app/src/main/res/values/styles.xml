@@ -4,39 +4,19 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
     </style>
 
-    <!-- Home Title. -->
-    <style name="HomeTitle">
-        <item name="android:layout_marginTop">20dp</item>
-        <item name="android:layout_marginBottom">30dp</item>
-        <item name="android:textSize">26sp</item>
-        <item name="android:textColor">#8bc34a</item>
-        <item name="android:gravity">center</item>
 
-    </style>
-    <!-- Home Button. -->
-    <style name="HomeBtn">
-        <item name="android:background">@drawable/home_activity_btn_bg</item>
+    <style name="HomeLayout">
         <item name="android:layout_marginLeft">30dp</item>
         <item name="android:layout_marginRight">30dp</item>
-        <item name="android:layout_marginBottom">8dp</item>
-        <item name="android:textSize">16sp</item>
     </style>
 
-    <!-- Base Home Title. -->
-    <!--<style name="BaseHomeTitle">-->
-    <!--<item name="android:layout_marginTop">30dp</item>-->
-    <!--<item name="android:layout_marginBottom">30dp</item>-->
-    <!--<item name="android:textSize">24sp</item>-->
-    <!--<item name="android:gravity">center</item>-->
-    <!--</style>-->
+    <style name="HomeBtn">
+        <item name="android:background">@drawable/home_activity_btn_bg</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:padding">10dp</item>
+    </style>
 
-    <!-- Base Home Button. -->
-    <!--<style name="BaseHomeBtn">-->
-    <!--<item name="android:padding">5dp</item>-->
-    <!--<item name="android:layout_marginLeft">30dp</item>-->
-    <!--<item name="android:layout_marginRight">30dp</item>-->
-    <!--<item name="android:textSize">16sp</item>-->
-    <!--</style>-->
 
     <style name="SettingsLabel">
         <item name="android:textSize">20sp</item>

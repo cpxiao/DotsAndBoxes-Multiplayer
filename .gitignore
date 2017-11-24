@@ -11,3 +11,4 @@
 gradlew*
 .idea
 *.apk
+_*
